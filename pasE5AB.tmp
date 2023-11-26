@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://sqeis8aqrpy6"]
+
+[ext_resource type="Script" path="res://node_spawner.gd" id="1_4fev5"]
+[ext_resource type="Script" path="res://camera2d_pan.gd" id="2_lmh2h"]
+[ext_resource type="Texture2D" uid="uid://ddtx86s647hp3" path="res://icon.svg" id="2_q3e1k"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(2, 0)
+script = ExtResource("1_4fev5")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+script = ExtResource("2_lmh2h")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_q3e1k")
