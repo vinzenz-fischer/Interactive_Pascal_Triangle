@@ -4,13 +4,14 @@ var prevMousePos = null
 var curZoom = 1
 var minZoom = 0.04
 var maxZoom = 1
-var delZoom = 0.1
+var delZoom = 0.05
 
 func _ready():
 	prevMousePos = get_local_mouse_position()
 
 func _process(_delta):
 	pan()
+	position.x = 0
 	zoom = lerp(zoom, curZoom * Vector2.ONE, 0.1)
 
 func _input(event):
