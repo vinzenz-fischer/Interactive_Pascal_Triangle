@@ -1,2 +1,4 @@
 # Godot 4+ specific ignores
 .godot/
+method_binomial_coefficients.png.import
+method_binomial_coefficients_manually_cancel_factor_and_divisors.png.import
